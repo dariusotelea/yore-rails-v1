@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_06_06_160048) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.string "type"
+    t.string "comment_type"
     t.string "description"
     t.integer "user_id"
   end

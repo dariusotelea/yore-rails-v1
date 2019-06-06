@@ -1,4 +1,3 @@
-module Api::V1
   class UsersController < ApplicationController
     def index
       users = User.all
@@ -31,7 +30,6 @@ module Api::V1
     private
 
     def user_params
-      json_api_params(:name)
+      json_api_params(:email, :full_name, :password, :picture)
     end
   end
-end
